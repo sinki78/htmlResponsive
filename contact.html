@@ -26,8 +26,8 @@
     <div class="headerBlock">
         <figure class="header_ban">
             <picture class="header_ban_logo">
-                <source srcset="./img/logo-badenbaden@2x.png" media="(min-width: 600px)">
-                <source srcset="./img/logo-badenbaden.png" media="(max-width: 600px)">
+                <source srcset="./img/logo-badenbaden@2x.png" media="(min-width: 641px)">
+                <source srcset="./img/logo-badenbaden.png" media="(max-width: 640px)">
                 <img src="./img/logo-badenbaden@2x.png" alt="MDN">
             </picture>
             <figcaption><span class="header_ban_legend_color">MUSÉE OCÉANOGRAPHIQUE</span> de Baden-Baden</figcaption>
@@ -38,21 +38,29 @@
                 <img src="img/fr.png" title="langue fr">
                 <img src="img/de.png" title="langue allemande">
             </nav>
-            <nav class="menu">
-                <ul>
+            <nav class="main-nav">
+                <input type="checkbox" class="menu-toggler" id="menu-toggler" aria-hidden="true">
+                <label for="menu-toggler" class="menu-toggler__label" aria-hidden="true">
+                    <span class="menu-toggler__label__text">Menu</span>
+                    <span class="menu-toggler__label__visual">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                </label>
+
+                <ul class="main-menu">
                     <li><a href="default.html">LE MUSÉE</a></li>
                     <li><a href="news.html">AQUARIUMS</a></li>
                     <li><a href="contact.html">ANIMATIONS</a></li>
                     <li><a href="about.html">ACTUALITÉS</a></li>
                     <li class="dropdown">
-                        <label class="dropbtn">
-                            PRÉPARER VOTRE VISITE
-                        </label>
-                        <div class="dropdown-content">
+                            PRÉPARER VOTRE VISITE*
+                        <li class="dropdown-content">
                             <a href="#">Link 1</a>
                             <a href="#">Link 2</a>
                             <a href="#">Link 3</a>
-                        </div>
+                        </li>
                     </li>
                     <li><a href="about.html">CONTACT</a></li>
                 </ul>
@@ -60,7 +68,10 @@
         </section>
     </div>
 </header>
-<nav id="ariane"><a title="Accueil" href="index.html">Accueil</a> > Contact</nav>
+<nav id="ariane">
+    <a title="Accueil" href="index.html">Accueil</a> > Contact
+</nav>
+
 
 <main>
 

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        
+        <title>Image adaptative</title>
+        
+        <style>
+            img {
+                position: relative;
+                width: 100%;
+                height: auto;
+            }
+        </style>
+        
+    </head>
+
+    <body>
+
+    <picture>
+        <source srcset="image-1200.jpg" media="(min-width: 780px)">
+        <source srcset="image-2400.jpg" media="(min-width: 780px) AND (-webkit-min-device-pixel-ratio: 2), (min-width: 780px) AND (min-resolution: 192dpi)">
+        <source srcset="image-780.jpg" media="(min-width: 401px)">
+        <source srcset="image-1560.jpg" media="(min-width: 401px) AND (-webkit-min-device-pixel-ratio: 2), (min-width: 780px) AND (min-resolution: 192dpi)">
+        <source srcset="image-400.jpg" media="(max-width: 400px)">
+        <source srcset="image-800.jpg" media="(max-width: 400px) AND (-webkit-min-device-pixel-ratio: 2), (min-width: 780px) AND (min-resolution: 192dpi)">
+        <img src="image-1200.jpg" alt="Maison d'Islande">
+    </picture>
+        
+
+    </body>
+</html>

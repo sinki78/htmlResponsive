@@ -1,0 +1,126 @@
+body {
+    background-color: #ddd;
+}
+
+header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 44px;
+    border-bottom: 2px solid #1fbed6;
+    background-color: #fff
+}
+
+.menu-toggler {
+    display: none;
+}
+
+.menu-toggler__label {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 10px;
+    bottom: 0;
+    width: 44px;
+    height: 100%;
+}
+
+.menu-toggler__label:hover,
+.menu-toggler__label:focus,
+.menu-toggler__label:active {
+    cursor: pointer
+}
+
+.menu-toggler__label__text {
+    position: absolute;
+    text-indent: -9999px;
+}
+
+.menu-toggler__label__visual span {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 6px;
+    background-color: #1fbed6;
+    transition: transform .5s, top .5s, bottom .5s, opacity .2s;
+    opacity: 1;
+}
+
+.menu-toggler__label__visual span:nth-child(1){
+    top: 5px;
+}
+
+.menu-toggler__label__visual span:nth-child(2) {
+    top: 50%;
+    margin-top: -3px
+}
+
+.menu-toggler__label__visual span:nth-child(3) {
+    bottom: 5px;
+} 
+
+.menu-toggler:checked + .menu-toggler__label .menu-toggler__label__visual span:nth-child(1) {
+    transform: rotate(45deg);
+    top: 19px;
+}
+
+.menu-toggler:checked + .menu-toggler__label .menu-toggler__label__visual span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggler:checked + .menu-toggler__label .menu-toggler__label__visual span:nth-child(3) {
+    transform: rotate(-45deg);
+    bottom: 19px;
+}
+
+
+
+
+.main-menu {
+    position: absolute;
+    list-style-type: none;
+    top: 44px;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding-left: 0;
+    display: none;
+}
+
+.menu-toggler:checked ~ .main-menu {
+    display: block;
+}
+
+.main-menu li {
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid #fff;
+}
+
+.main-menu a {
+    display: block;
+    line-height: 44px;
+    padding: 0 .7em; 
+}
+
+.main-menu a,
+.main-menu a:visited,
+.main-menu a:hover,
+.main-menu a:focus,
+.main-menu a:active {
+    text-decoration: none;
+    color: #fff;
+}
+
+.main-menu a,
+.main-menu a:visited {
+    background-color: #1fbed6;
+}
+
+.main-menu a:hover,
+.main-menu a:focus,
+.main-menu a:active {
+    background-color: #17a0b5;
+}
+
