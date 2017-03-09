@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <meta name="description" content="Page contact">
+    <meta name="keywords" content="HTML">
+    <meta name="author" content="John Doe">
+    <meta name="Language" content="fr">
+
+    <meta property="og:type" content="site web"/>
+    <meta property="og:title" content="Contact"/>
+    <meta property="og:locale" content="fr_FR"/>
+    <meta property="og:description" content="Page contact du musée océanographique"/>
+
+    <meta property="twitter:creator" content="John Doe"/>
+    <meta property="twitter:image"
+          content="http://www.exponaute.com/exponaute_assets/uploads/lieux_photos/1705/1347379179.jpeg"/>
+
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!--<link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.css">-->
+</head>
+<body>
+<header>
+    <div class="headerBlock">
+        <figure class="header_ban">
+            <picture class="header_ban_logo">
+                <source srcset="./img/logo-badenbaden@2x.png" media="(min-width: 600px)">
+                <source srcset="./img/logo-badenbaden.png" media="(max-width: 600px)">
+                <img src="./img/logo-badenbaden@2x.png" alt="MDN">
+            </picture>
+            <figcaption><span class="header_ban_legend_color">MUSÉE OCÉANOGRAPHIQUE</span> de Baden-Baden</figcaption>
+        </figure>
+
+        <section>
+            <nav class="icones">
+                <img src="img/fr.png" title="langue fr">
+                <img src="img/de.png" title="langue allemande">
+            </nav>
+            <nav class="menu">
+                <ul>
+                    <li><a href="default.html">LE MUSÉE</a></li>
+                    <li><a href="news.html">AQUARIUMS</a></li>
+                    <li><a href="contact.html">ANIMATIONS</a></li>
+                    <li><a href="about.html">ACTUALITÉS</a></li>
+                    <li class="dropdown">
+                        <label class="dropbtn">
+                            PRÉPARER VOTRE VISITE
+                        </label>
+                        <div class="dropdown-content">
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
+                        </div>
+                    </li>
+                    <li><a href="about.html">CONTACT</a></li>
+                </ul>
+            </nav>
+        </section>
+    </div>
+</header>
+<nav id="ariane"><a title="Accueil" href="index.html">Accueil</a> > Contact</nav>
+
+<main>
+
+    <section id="ddd">
+        <h1>Contact</h1>
+        <h3>Vous avez une question, une demande?<br/> Ecrivez nous grâce au formulaire ci-dessous: </h3>
+
+        <form method="post" action="#">
+            <p>
+                <label hidden for="nom">Nom : </label><input type="text" placeholder="Votre Nom *" name="nom" id="nom"
+                                                             required>
+            </p>
+            <p>
+                <label hidden for="email">Demande : </label><input type="email" placeholder="Votre Email *" name="email"
+                                                                   id="email" required>
+            </p>
+            <p>
+                <label hidden for="objet">Objet : </label><select name="objet" id="objet">
+                <option value="" disabled selected>Objet de votre demande</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+            </select>
+            </p>
+            <p>
+                <label hidden for="message">Message : </label><textarea name="message" placeholder="Votre message *"
+                                                                        id="message" required></textarea>
+            </p>
+            <p id="legende">* Champs obligatoires</p>
+
+            <input type="submit" value="Envoyer">
+        </form>
+    </section>
+
+
+    <aside></aside>
+</main>
+<footer>
+    <p>Le musée est ouvert tous les jours sauf lundi et jours fériés de 9h30 a 18h. Plus d'information sur les horaires
+        d'ouverture</p>
+    <p>Le musée est ouvert tous les jours sauf lundi et jours fériés de 9h30 a 18h. Plus d'information sur les horaires
+        d'ouverture</p>
+    <p>Le musée est ouvert tous les jours sauf lundi et jours fériés de 9h30 a 18h. Plus d'information sur les horaires
+        d'ouverture</p>
+    <p>Le musée est ouvert tous les jours sauf lundi et jours fériés de 9h30 a 18h. Plus d'information sur les horaires
+        d'ouverture</p>
+
+</footer>
+</body>
+</html>
