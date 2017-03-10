@@ -1,0 +1,205 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+
+@media screen and ( min-width: 1024px) {
+    /* HEADER */
+
+    header {
+        position: relative;
+        width: 100%;
+        border-bottom: 2px solid #1fbed6;
+        background-color: #fff;
+    }
+
+    .headerBlock {
+        max-width: 960px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        /*background-color: orange;*/
+        position: relative;
+
+
+    }
+
+    .header_ban {
+        display: flex;
+        flex-grow: 1;
+        max-width: 300px;
+    }
+
+    .header_ban_legend_color {
+        color: #1ebed6;
+    }
+
+    .headerBlock section {
+        display: flex;
+        /*flex-grow: 1;*/
+        flex-direction: column;
+    }
+
+    .menu-toggler {
+        display: none;
+    }
+
+    .menu-toggler__label__text{
+        display: none;
+    }
+
+    .main-menu{
+        float: right;
+        display: flex;
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+
+    .dropdown_title{
+        display: block;
+        color: #787878;
+        text-align: center;
+        padding: 2px 8px;
+        text-decoration: none;
+
+        float: left;
+        border-right:1px solid #bbb;
+    }
+
+    .dropdown_title:hover{
+        color: #1fbed6 ;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    .header_title{
+        color: #1fbed6 ;
+    }
+    .header_logo{
+        background: url("img/logo-badenbaden@2x.png") no-repeat;
+        background-size: 100px 50px;
+        width: 140px;
+    }
+    li {
+        float: left;
+
+        border-right:1px solid #bbb;
+    }
+
+    li:last-child {
+        border-right: none;
+
+    }
+
+    li a {
+        display: block;
+        color: #787878;
+
+        text-align: center;
+        padding: 2px 8px;
+        text-decoration: none;
+    }
+
+    li a:hover:not(.active) {
+        color: #1fbed6;
+    }
+
+    .active {
+        color: #1fbed6;
+    }
+
+    .dropbtn {
+        /*background-color: #4CAF50;*/
+        /*color: white;*/
+        /*font-size: 16px;*/
+        border: none;
+        cursor: pointer;
+
+        display: block;
+        color: #787878;
+
+        text-align: center;
+        padding: 2px 3px;
+        text-decoration: none;
+    }
+
+    .dropdown {
+        /*position: absolute;*/
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        top: 130px;
+        border-top: 1px solid #1fbed6;
+        min-width: 195px;
+        /*z-index: -1;*/
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown-content a:hover {background-color: #f1f1f1}
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    /* Change the background color of the dropdown button when the dropdown content is shown */
+    .dropdown:hover .dropbtn {
+        /*background-color: #3e8e41;*/
+    }
+
+
+
+    .icones {
+        flex-grow: 1;
+        position: relative;
+        top: 10px;
+        margin-left: 90%;
+    }
+
+
+    /* images filente*/
+    .magesContainer {
+        position: relative;
+    }
+
+    .mages {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+    }
+
+    /* ARIANE */
+    #ariane{
+        margin-top: 15px;
+    }
+
+    /* MAIN */
+    main{
+        /*margin-top: 150px;*/
+    }
+
+    /* BODY */
+    body {
+        margin: 0 auto;
+        font-family: 'montserrat', sans-serif;
+    }
+
+}
