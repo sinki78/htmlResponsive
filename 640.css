@@ -13,7 +13,6 @@
         margin: 0 auto;
         display: flex;
         flex-direction: column;
-        background-color: yellow;
         position: relative;
 
     }
@@ -166,10 +165,27 @@
 
     }
 
-    /* ARIANE */
-    #ariane{
-        margin-top: 15px;
+    .main_text_title{
+        margin: auto;
+        max-width: 370px;
+        text-align: center;
+        color: #1ebed6;
+
     }
+
+    .main_text p:nth-child(2){
+        margin: 15px auto;
+        max-width: 675px;
+        text-align: center;
+    }
+
+    .main_text p:nth-child(3){
+
+        margin: 15px auto;
+        max-width: 675px;
+        text-align: center;
+    }
+
 
     /* MAIN */
     main{
