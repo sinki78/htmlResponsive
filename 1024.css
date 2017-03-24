@@ -230,7 +230,7 @@
     }
 
     .main_actu{
-        background-color: red;
+        /*background-color: red;*/
         flex-wrap: wrap;
         display: flex ;
         max-width: 1200px;
@@ -254,6 +254,44 @@
         width: 23%;
     }
 
+    .main_actu aside{
+        /*width: 50px;*/
+
+        margin: 10px auto;
+
+
+    }
+
+    .main_actu_button{
+        width: 150px;
+        height: 50px;
+        border: 1px #808080 solid;
+
+
+
+    }
+    /*.main_actu_button {*/
+        /*vertical-align: top;*/
+        /*width: 30px;*/
+        /*height: 100px;*/
+        /*padding: 0;*/
+        /*font-size: 11px;*/
+        /*color: white;*/
+        /*text-align: center;*/
+        /*text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);*/
+        /*background: #e67e22;*/
+        /*border: 0;*/
+        /*border-bottom: 2px solid #da751c;*/
+        /*cursor: pointer;*/
+        /*-webkit-box-shadow: inset 0 -2px #da751c;*/
+        /*box-shadow: inset 0 -2px #da751c;*/
+    /*}*/
+    /*.main_actu_button:active {*/
+        /*top: 1px;*/
+        /*outline: none;*/
+        /*-webkit-box-shadow: none;*/
+        /*box-shadow: none;*/
+    /*}*/
 
 
     /*picture img{*/
@@ -270,4 +308,54 @@
         font-family: 'montserrat', sans-serif;
     }
 
+    footer{
+        background-color: #1ebed6;
+
+    }
+    .footerBlock {
+        max-width: 1200px;
+        margin: 10px auto 0;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    .footerBlock_first_section{
+        display: flex;
+        justify-content: space-between;
+        margin: 15px;
+    }
+
+    .footerBlock_first_section article{
+        color: white;
+        padding: 0;
+        margin: 0;
+        width: 23%;
+    }
+    .footerBlock_first_section_logo_fb{
+        width: 25px;
+        height: 25px;
+    }
+
+    .footerBlock_first_section_logo_twitter{
+        width: 25px;
+    }
+    .footerBlock_first_section article{
+        display: flex;
+        flex-direction: column;
+    }
+    .footerBlock_first_section a{
+
+        color: white;
+    }
+
+    .footerBlock_second_section{
+        margin: auto;
+    }
+
+    .footerBlock_second_section p{
+        color: #FFF;
+        text-align: center;
+        font-weight: bold;
+    }
 }

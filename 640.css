@@ -41,8 +41,8 @@
         /*top: 0;*/
         right: 10px;
         bottom: 0;
-        width: 44px;
-        height: 40%;
+        width: 42px;
+        height: 47%;
     }
 
     .menu-toggler__label:hover,
@@ -95,6 +95,23 @@
 
 
 
+    .dropdown{
+        text-decoration: none;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        list-style-type: circle;
+        color:#787878;
+        background-color: #FFF ;
+    }
+
+
+
+    .dropdown_title {
+        /*padding: 10px;*/
+        position: relative;
+        /*margin-top: 50px;*/
+    }
 
     .main-menu {
         position: absolute;
@@ -102,10 +119,18 @@
         top: 100%;
         left: 0;
         right: 0;
-        margin: 0;
+        margin: 0 ;
         padding-left: 0;
         display: none;
     }
+
+    .dropdown-content a{
+        margin: 3px;
+        padding: 0;
+        border-bottom: 1px solid #fff;
+        background-color: #1ebed6;
+    }
+
 
     .menu-toggler:checked ~ .main-menu {
         display: block;
@@ -114,10 +139,21 @@
     .main-menu li {
         margin: 0;
         padding: 0;
-        border-bottom: 1px solid #fff;
+        border-bottom: 1px solid #1fbed6;
+
+
     }
 
-    .main-menu a {
+
+
+    .main-menu span{
+
+        margin: 0;
+        padding: 0;
+        border-bottom: 1px solid #1fbed6;
+    }
+
+    .main-menu a, .main-menu span {
         display: block;
         line-height: 44px;
         padding: 0 .7em;
@@ -132,16 +168,19 @@
         color: #fff;
     }
 
-    .main-menu a,
-    .main-menu a:visited {
-        background-color: #1fbed6;
+    .main-menu a:not(.dropdown_link) ,
+    .main-menu a:visited{
+        background-color: #FFF;
+        color: #787878;
     }
 
     .main-menu a:hover,
     .main-menu a:focus,
     .main-menu a:active {
-        background-color: #17a0b5;
+        background-color: #FFF;
+        color: #1fbed6;
     }
+
 
 
     .icones {
@@ -206,6 +245,44 @@
         /*margin-left: 60px;*/
     }
 
+    .main_actu{
+        flex-wrap: wrap;
+        display: flex ;
+        max-width: 1200px;
+        margin: auto;
+        flex-direction: column;
+        /*margin-left: 20px;*/
+
+    }
+    .main_actu_title{
+        width: 100%;
+        margin: auto;
+        text-align: center;
+    }
+
+    .main_actu figure{
+        background-color: #1ebed6;
+        /*margin-left: 40px;*/
+        color: white;
+        text-align: center;
+        /*flex: 1;*/
+        min-width: 250px;
+        max-width: 50%;
+        padding: 0;
+        margin: 10px auto;
+    }
+    .main_actu aside{
+        margin: 10px auto;
+    }
+
+    .main_actu_button{
+        width: 150px;
+        height: 50px;
+        border: 1px #808080 solid;
+
+
+
+    }
 
     /* MAIN */
     main{
