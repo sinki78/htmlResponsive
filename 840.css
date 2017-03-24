@@ -284,4 +284,55 @@
         font-family: 'montserrat', sans-serif;
     }
 
+    footer{
+        background-color: #1ebed6;
+
+    }
+    .footerBlock {
+        max-width: 1200px;
+        margin: 10px auto 0;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    .footerBlock_first_section{
+        display: flex;
+        justify-content: space-between;
+        margin: 15px;
+    }
+
+    .footerBlock_first_section article{
+        color: white;
+        padding: 0;
+        margin: 0;
+        width: 23%;
+    }
+    .footerBlock_first_section_logo_fb{
+        width: 25px;
+        height: 25px;
+    }
+
+    .footerBlock_first_section_logo_twitter{
+        width: 25px;
+    }
+    .footerBlock_first_section article{
+        display: flex;
+        flex-direction: column;
+    }
+    .footerBlock_first_section a{
+
+        color: white;
+    }
+
+    .footerBlock_second_section{
+        margin: auto;
+    }
+
+    .footerBlock_second_section p{
+        color: #FFF;
+        text-align: center;
+        font-weight: bold;
+    }
+
 }
