@@ -215,6 +215,15 @@
 
     }
 
+    .main_carousel button{
+        width: 150px;
+        height: 30px;
+        border: 1px #FFF solid;
+
+        background-color: Transparent;
+        color: #FFF;
+    }
+
     .main_carousel{
         padding: 0;
         margin: 0;
