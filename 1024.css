@@ -1,71 +1,33 @@
-*,
-*:before,
-*:after {
-    box-sizing: border-box;
-}
-
-
 @media screen and ( min-width: 1024px) {
     /* HEADER */
-
-    header {
-        position: relative;
-        width: 100%;
-        border-bottom: 2px solid #1fbed6;
-        background-color: #fff;
-    }
 
     .headerBlock {
         max-width: 960px;
         margin: 0 auto;
         display: flex;
         flex-direction: row;
-        /*background-color: orange;*/
         position: relative;
-
-
     }
-
     .header_ban {
         display: flex;
         flex-grow: 1;
         max-width: 300px;
     }
-
-    .header_ban_legend_color {
-        color: #1ebed6;
-    }
-
-    .headerBlock section {
-        display: flex;
-        /*flex-grow: 1;*/
-        flex-direction: column;
-    }
-
-    .menu-toggler {
-        display: none;
-    }
-
     .menu-toggler__label__text{
         display: none;
     }
-
     .main-menu{
         float: right;
         display: flex;
         font-size: 12px;
         margin-bottom: 10px;
     }
-
-
-
     .dropdown_title{
         display: block;
         color: #787878;
         text-align: center;
         padding: 2px 8px;
         text-decoration: none;
-
         float: left;
         border-right:1px solid #bbb;
     }
@@ -84,6 +46,7 @@
     .header_title{
         color: #1fbed6 ;
     }
+
     .header_logo{
         background: url("img/logo-badenbaden@2x.png") no-repeat;
         background-size: 100px 50px;
@@ -97,13 +60,11 @@
 
     li:last-child {
         border-right: none;
-
     }
 
     li a {
         display: block;
         color: #787878;
-
         text-align: center;
         padding: 2px 8px;
         text-decoration: none;
@@ -118,22 +79,16 @@
     }
 
     .dropbtn {
-        /*background-color: #4CAF50;*/
-        /*color: white;*/
-        /*font-size: 16px;*/
         border: none;
         cursor: pointer;
-
         display: block;
         color: #787878;
-
         text-align: center;
         padding: 2px 3px;
         text-decoration: none;
     }
 
     .dropdown {
-        /*position: absolute;*/
         display: inline-block;
     }
 
@@ -144,7 +99,6 @@
         top: 130px;
         border-top: 1px solid #1fbed6;
         min-width: 195px;
-        /*z-index: -1;*/
     }
 
     .dropdown-content a {
@@ -160,13 +114,6 @@
         display: block;
     }
 
-    /* Change the background color of the dropdown button when the dropdown content is shown */
-    .dropdown:hover .dropbtn {
-        /*background-color: #3e8e41;*/
-    }
-
-
-
     .icones {
         flex-grow: 1;
         position: relative;
@@ -174,9 +121,7 @@
         margin-left: 90%;
     }
 
-
     /* images filente*/
-
     .main_carousel_figcaption {
         position: absolute;
         color: white;
@@ -185,7 +130,6 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-
     }
 
     .main_carousel{
@@ -199,7 +143,6 @@
         width: 150px;
         height: 30px;
         border: 1px #FFF solid;
-
         background-color: Transparent;
         color: #FFF;
     }
@@ -224,7 +167,6 @@
     }
 
     .main_text p:nth-child(3){
-
         margin: 15px auto;
         max-width: 675px;
         text-align: center;
@@ -234,8 +176,6 @@
         margin: 15px auto;
         display: flex ;
         max-width: 800px;
-        /*flex-direction: row;*/
-        /*background-color: red;*/
     }
     .main_info figure{
         background-color: #1ebed6;
@@ -243,12 +183,10 @@
         margin: 10px;
         color: white;
         text-align: center;
-
         padding: 10px;
     }
 
     .main_actu{
-        /*background-color: red;*/
         flex-wrap: wrap;
         display: flex ;
         max-width: 1200px;
@@ -261,23 +199,15 @@
     }
 
     .main_actu figure{
-        /*background-color: #1ebed6;*/
-        /*flex-grow: 1;*/
-        /*margin-left: 40px;*/
         color: black;
         text-align: center;
-        /*flex: 1;*/
         padding: 0;
         margin: 0;
         width: 23%;
     }
 
     .main_actu aside{
-        /*width: 50px;*/
-
         margin: 10px auto;
-
-
     }
 
     .main_actu_button{
@@ -298,7 +228,6 @@
 
 
     .main_actu_figcaption_section{
-
         min-width: 70%;
         max-width: 70%;
         text-align: left;
@@ -318,7 +247,6 @@
         padding: 0;
     }
     .main_actu_figcaption_section_second_p{
-
         position: relative;
         left:60%;
         margin: 0;
@@ -330,37 +258,6 @@
         height: 22px;
 
     }
-    /*.main_actu_button {*/
-        /*vertical-align: top;*/
-        /*width: 30px;*/
-        /*height: 100px;*/
-        /*padding: 0;*/
-        /*font-size: 11px;*/
-        /*color: white;*/
-        /*text-align: center;*/
-        /*text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);*/
-        /*background: #e67e22;*/
-        /*border: 0;*/
-        /*border-bottom: 2px solid #da751c;*/
-        /*cursor: pointer;*/
-        /*-webkit-box-shadow: inset 0 -2px #da751c;*/
-        /*box-shadow: inset 0 -2px #da751c;*/
-    /*}*/
-    /*.main_actu_button:active {*/
-        /*top: 1px;*/
-        /*outline: none;*/
-        /*-webkit-box-shadow: none;*/
-        /*box-shadow: none;*/
-    /*}*/
-
-
-    /*picture img{*/
-        /*width: 100%;*/
-    /*}*/
-    /* MAIN */
-    main{
-        /*margin-top: 150px;*/
-    }
 
     /* BODY */
     body {
@@ -370,8 +267,8 @@
 
     footer{
         background-color: #1ebed6;
-
     }
+
     .footerBlock {
         max-width: 1200px;
         margin: 10px auto 0;
@@ -405,7 +302,6 @@
         flex-direction: column;
     }
     .footerBlock_first_section a{
-
         color: white;
     }
 
